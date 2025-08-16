@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Log in — BrandName</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="auth.js"></script>
+</head>
+<body class="theme-dark">
+  <div class="container" style="padding:48px 24px;">
+    <a href="index.html" class="logo">← BrandName</a>
+    <main style="max-width:560px;margin:28px auto;">
+      <h1>Welcome back</h1>
+      <p class="lead">Sign in with the account you created in the demo signup.</p>
+
+      <form id="login-form" style="margin-top:18px;display:grid;gap:12px">
+        <label>
+          <span style="display:block;margin-bottom:6px;color:var(--muted)">Email</span>
+          <input name="email" required type="email" placeholder="you@example.com">
+        </label>
+        <label>
+          <span style="display:block;margin-bottom:6px;color:var(--muted)">Password</span>
+          <input name="password" required type="password" placeholder="Your password">
+        </label>
+        <div style="display:flex;gap:10px;margin-top:8px;">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+          <a href="signup.html" class="btn btn-outline">Create account</a>
+        </div>
+        <p id="login-message" style="color:var(--muted);font-size:.95rem"></p>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
